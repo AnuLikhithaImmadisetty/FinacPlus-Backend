@@ -13,7 +13,7 @@ dotenv.config({
 })
 
 app.use(cors({
-    origin : [process.env.LOCAL_URI, process.env.PRODUCTION_URI],
+    origin : '*',
     methods : ["GET", "POST", "PUT", "DELETE"]
 }))
 
